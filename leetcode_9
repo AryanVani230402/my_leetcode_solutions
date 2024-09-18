@@ -1,0 +1,18 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+
+        StringBuffer sbr_reversed = new StringBuffer("" + x);
+        sbr_reversed.reverse();
+
+        String original = "" + x;
+
+        String str_reversed = "" + sbr_reversed;
+
+        if(str_reversed.equals(original)) {
+            return true;
+        } else {
+            return false;
+        }
+        
+    }
+}
